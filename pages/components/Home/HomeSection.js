@@ -1,18 +1,12 @@
 import React from 'react'
+import AllFeatures from './AllFeatures'
 
 const HomeSection = () => {
   return (
     <div>
-        
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
+        <div>
+          <AllFeatures/>
+        </div>
     </div>
   )
 }

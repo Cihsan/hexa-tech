@@ -1,7 +1,7 @@
 import React from 'react';
 import AllPages from './components/AllPages/AllPages';
 import HomeSection from './components/Home/HomeSection';
-import Navbar from './components/Home/Navbar';
+
 
 const index = () => {
   return (
