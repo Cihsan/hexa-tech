@@ -426,7 +426,7 @@
   "resolved" "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
 
-"daisyui@^2.19.0":
+"daisyui@^2.17.0", "daisyui@^2.19.0":
   "integrity" "sha512-lLOz4cHm3xpm0AfdFojDFrhiDu4hZTdEbcVJri+KzQn1HvxmZS4STVujn8tV4RQXjchGdnIsXFqxd6F7rVZBiA=="
   "resolved" "https://registry.npmjs.org/daisyui/-/daisyui-2.19.0.tgz"
   "version" "2.19.0"
@@ -1590,7 +1590,12 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@18.2.0":
+"react-daisyui@^2.1.0":
+  "integrity" "sha512-HBVDs0/CclvVkyneouu7PrVtQfXpeSKVuntnAk1YVeZuUEpCrbds9EG/pG08U7GKVajag5j8+P8Ozx3ud80P/Q=="
+  "resolved" "https://registry.npmjs.org/react-daisyui/-/react-daisyui-2.1.0.tgz"
+  "version" "2.1.0"
+
+"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -1603,7 +1608,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -1808,7 +1813,7 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"tailwindcss@^3.0", "tailwindcss@^3.1.6":
+"tailwindcss@^3.0", "tailwindcss@^3.0.23", "tailwindcss@^3.1.6":
   "integrity" "sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.1.6.tgz"
   "version" "3.1.6"
