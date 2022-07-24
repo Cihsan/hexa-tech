@@ -4,6 +4,11 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+<<<<<<< HEAD
+  theme: {
+      
+    extend: {},
+=======
   daisyui: {
     themes: [
       {
@@ -29,6 +34,7 @@ module.exports = {
         },
       },
     ],
+>>>>>>> e4041be1e96af91882a3a8f9dceb2ba28f6e7033
   },
   plugins: [require("daisyui")],
 }
