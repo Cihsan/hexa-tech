@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {}
+
+/* .bg-text {
+    color: #913bff;
+    text-decoration: underline;
+} */

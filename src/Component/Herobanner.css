@@ -1,0 +1,28 @@
+.herotext2 {
+    color: #913bff;
+    text-decoration: underline;
+}
+
+.herotext1 {
+    color: #010d4c;
+}
+
+/* .bgimg{
+    background-image:https://i.ibb.co/0YWbs54/shape2.png;
+} */
+
+@media only screen and (max-width:600px) {
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:992px) {
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
