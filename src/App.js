@@ -20,6 +20,7 @@ import EditProducts from './Pages/Inventory/EditProduct/EditProducts';
 import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
+import NewTask from './Pages/Projects/NewTask';
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
         <Route path="editProducts/:id" element={<EditProducts />} />
         <Route path="task" element={<TaskBoard />}>
           <Route index element={<TaskShow />} />
-          <Route path="taskAdd" element={<TaskAdd />} />
+          {/* <Route path="taskAdd" element={<TaskAdd />} /> */}
+          <Route path="taskAdd" element={ 
+            <NewTask />} />
           <Route path="employee" element={<EmployeeHome />} />
           <Route path="addEmployee" element={<AddEmployee />} />
         </Route>
