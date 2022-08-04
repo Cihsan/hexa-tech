@@ -1,8 +1,9 @@
- "sweetalert2": "^11.4.6",
- npm i sweetalert2
 
 
- <!-- finance managemant app npm pakage -->
+
+  finance managemant app npm pakage
+
+
  "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@speechly/react-client": "0.0.4",
@@ -12,5 +13,5 @@
     "uuid": "^8.3.1",
 
 
-<!-- just copy this pakage and past on pakage.json folder ..
-then open terminal and run  "npm i --force" -->
+just copy this pakage and past on pakage.json folder ..
+then open terminal and run  "npm i --force" 
