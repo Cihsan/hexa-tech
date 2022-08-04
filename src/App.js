@@ -20,6 +20,8 @@ import EditProducts from './Pages/Inventory/EditProduct/EditProducts';
 import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
+
+
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
 
 function App() {

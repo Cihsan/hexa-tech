@@ -10,8 +10,8 @@ const EditProducts = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     // const [user] = useAuthState(auth);
     // console.log(user)
-    const { id } = useParams()
     const navigate = useNavigate()
+    const { id } = useParams()
 
     const onSubmit = (data) => {
         console.log(data)
