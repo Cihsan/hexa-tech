@@ -22,6 +22,8 @@ const Navbar = () => {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/Inventory'>Inventory</Link></li>
             <li><Link to='/project'>Project</Link></li>
+            <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
+            <li><Link to='/allBlog'>Blog</Link></li>
             {
               user ?
                 <div class="dropdown dropdown-end">
@@ -47,6 +49,8 @@ const Navbar = () => {
           <li><Link to='/Inventory'>Inventory</Link></li>
           <li><Link to='/project'>Project</Link></li>
           <li><Link to='/live-chat'>Message</Link></li>
+          <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
+          <li><Link to='/allBlog'>Blog</Link></li>
           {
             user ?
               <div class="dropdown dropdown-end">

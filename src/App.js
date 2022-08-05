@@ -20,6 +20,9 @@ import EditProducts from './Pages/Inventory/EditProduct/EditProducts';
 import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
+import Spreadsheets from './Pages/Spreadsheets/Spreadsheets';
+import AllBlog from './Pages/AllBlog/AllBlog';
+
 
 
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
@@ -31,6 +34,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/live-chat" element={<LiveChat />} />
+        <Route path="/spreadsheet" element={<Spreadsheets />} />
+        <Route path="/allBlog" element={<AllBlog />} />
         <Route path="/inventory" element={<Inventtory />} />
         <Route path="/project" element={<ProjectLanding />} />
         <Route path="/login" element={<Login />}></Route>
