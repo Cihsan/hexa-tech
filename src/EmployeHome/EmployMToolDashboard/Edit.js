@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
-import "./text.css"
+import "./addAndEditForm.css"
 
 function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
 
@@ -53,19 +53,19 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
     };
 
     return (
-        <div className="small-container  mb-20">
-            <form className='' onSubmit={handleUpdate}>
-                <h1>Edit <span className='bgtext'>Employee</span> Dtails !</h1>
-                <label htmlFor="firstName">First Name</label>
-                <input
+        <div className="place-content-center mx-auto card w-96 bg-base-100 shadow-xl  ">
+            <form className='mx-auto  my-10' onSubmit={handleUpdate}>
+                <h1 className='card-title font-bold'>Edit <span className='bgtext'>Employee</span> Dtails !</h1>
+                <label htmlFor="firstName">Name</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="firstName"
                     type="text"
                     name="firstName"
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                 />
-                <label htmlFor="lastName">Last Name</label>
-                <input
+                <label htmlFor="lastName">Job Position</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="lastName"
                     type="text"
                     name="lastName"
@@ -73,7 +73,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     onChange={e => setLastName(e.target.value)}
                 />
                 <label htmlFor="email">Email</label>
-                <input
+                <input className='input input-bordered w-full max-w-xs'
                     id="email"
                     type="email"
                     name="email"
@@ -81,15 +81,15 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     onChange={e => setEmail(e.target.value)}
                 />
                 <label htmlFor="salary">Salary ($)</label>
-                <input
+                <input className='input input-bordered w-full max-w-xs'
                     id="salary"
                     type="number"
                     name="salary"
                     value={salary}
                     onChange={e => setSalary(e.target.value)}
                 />
-                <label htmlFor="date">Date</label>
-                <input
+                <label htmlFor="date">Join Date</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="date"
                     type="date"
                     name="date"
@@ -97,10 +97,10 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     onChange={e => setDate(e.target.value)}
                 />
                 <div style={{ marginTop: '30px' }}>
-                    <input type="submit" value="Update" />
-                    <input
+                    <input className="btn btn-active btn-success" type="submit" value="Update" />
+                    <input 
                         style={{ marginLeft: '12px' }}
-                        className="muted-button"
+                        className="btn btn-error"
                         type="button"
                         value="Cancel"
                         onClick={() => setIsEditing(false)}

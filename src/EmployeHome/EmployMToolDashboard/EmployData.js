@@ -2,7 +2,7 @@ const employeesData = [
     {
       id: 1,
       firstName: 'Susan',
-      lastName: 'Jordon',
+      lastName: 'Seals man',
       email: 'susan@example.com',
       salary: '95000',
       date: '2019-04-11'
@@ -10,7 +10,7 @@ const employeesData = [
     {
       id: 2,
       firstName: 'Adrienne',
-      lastName: 'Doak',
+      lastName: 'Oparetor',
       email: 'adrienne@example.com',
       salary: '80000',
       date: '2019-04-17'
@@ -18,7 +18,7 @@ const employeesData = [
     {
       id: 3,
       firstName: 'Rolf',
-      lastName: 'Hegdal',
+      lastName: 'Exucative',
       email: 'rolf@example.com',
       salary: '79000',
       date: '2019-05-01'
@@ -26,7 +26,7 @@ const employeesData = [
     {
       id: 4,
       firstName: 'Kent',
-      lastName: 'Rosner',
+      lastName: 'Junior Manager',
       email: 'kent@example.com',
       salary: '56000',
       date: '2019-05-03'
@@ -34,7 +34,7 @@ const employeesData = [
     {
       id: 5,
       firstName: 'Arsenio',
-      lastName: 'Grant',
+      lastName: 'Field oparetor',
       email: 'arsenio@example.com',
       salary: '65000',
       date: '2019-06-13'
@@ -42,7 +42,7 @@ const employeesData = [
     {
       id: 6,
       firstName: 'Laurena',
-      lastName: 'Lurie',
+      lastName: 'Marketing Exucative',
       email: 'laurena@example.com',
       salary: '120000',
       date: '2019-07-30'
@@ -50,7 +50,7 @@ const employeesData = [
     {
       id: 7,
       firstName: 'George',
-      lastName: 'Tallman',
+      lastName: 'oparetor',
       email: 'george@example.com',
       salary: '90000',
       date: '2019-08-15'
@@ -58,7 +58,7 @@ const employeesData = [
     {
       id: 8,
       firstName: 'Jesica',
-      lastName: 'Watlington',
+      lastName: 'TSM',
       email: 'jesica@example.com',
       salary: '60000',
       date: '2019-10-10'
@@ -66,7 +66,7 @@ const employeesData = [
     {
       id: 9,
       firstName: 'Matthew',
-      lastName: 'Warren',
+      lastName: 'Junior Exucative',
       email: 'matthew@example.com',
       salary: '71000',
       date: '2019-10-15'
@@ -74,7 +74,7 @@ const employeesData = [
     {
       id: 10,
       firstName: 'Lyndsey',
-      lastName: 'Follette',
+      lastName: 'Exucative',
       email: 'lyndsey@example.com',
       salary: '110000',
       date: '2020-01-15'

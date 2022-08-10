@@ -1,0 +1,16 @@
+.small-container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-container {
+  max-width: 800px;
+}
+label {
+    font-weight: 600;
+    max-width: 100%;
+    display: block;
+    margin: 1rem 0 0.5rem;
+  }

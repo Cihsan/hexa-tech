@@ -1,5 +1,6 @@
+import colorNames from 'daisyui/src/colors/colorNames';
 import React from 'react'
-import "./List.css"
+// import "./List.css"
 
 function List({ employees, handleEdit, handleDelete }) {
 
@@ -13,16 +14,16 @@ function List({ employees, handleEdit, handleDelete }) {
     // <table className='striped-table'>
 
     return (
-        <div className=' contain-table bg-sky-100 mb-20 p-2 rounded-xl'>
-            <table className='  striped-table'>
-                <thead>
-                    <tr>
+        <div className=' container  ml-10 bg-slate-500 mb-20 p-2 rounded-xl bg-'>
+            <table className=' table table-zebra w-full striped-table'>
+                <thead >
+                    <tr >
                         <th >No.</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>Name</th>
+                        <th>Job Position</th>
                         <th>Email</th>
                         <th>Salary</th>
-                        <th>Date</th>
+                        <th>Join Date</th>
                         <th colSpan={2} className="text-center">
                             Actions
                         </th>

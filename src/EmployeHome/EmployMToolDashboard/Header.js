@@ -16,7 +16,7 @@ function Header({ setIsAdding }) {
 
                 <div className='flex justify-around align-middle' style={{ marginTop: '20px', marginBottom: '18px' }}>
                                 
-                                <button  onClick={() => setIsAdding(true)} className=' btn-primary rounded-full '>Add Employee</button>
+                                <button  onClick={() => setIsAdding(true)} className=' btn btn-primary rounded-full '>Add Employee</button>
                             </div>
         </header>
     )
