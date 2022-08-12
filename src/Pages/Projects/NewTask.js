@@ -56,6 +56,7 @@ const NewTask = () => {
 
     return (
         <div className='lg:my-6 my-4 lg:mx-40 mx-4'>
+            <h1 className='text-3xl font-mono'>Add Notes <a href="https://incredible-zabaione-2ed5a1.netlify.app/">click</a> here</h1>
             <h1 className='text-3xl flex justify-center font-light '>Task Management</h1>
             <div className="card card-compact w-75 bg-base-300 shadow-xl">
                 <div className="card-body">
