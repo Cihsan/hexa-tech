@@ -28,6 +28,28 @@ const AllBlog = () => {
     Next.js is a choice of big names like Netflix or Uber as well as smaller companies that are just starting. In other words, no matter what stage you are right now, you can use NextJS, however, sometimes it might be excessive.
     It’s achievable because NextJS gives its users rich possibilities which means a long list of pros. However, like any other technology.`
 
+    const ThowhiduzzamanBlog = `Next.js supports styling with CSS as well as precompiled Scss and Sass, CSS-in-JS, and styled JS Html. In addition, it is built with TypeScript support and smart bundling. The open-source transpiler, Babel is used to transform and compiling code into JavaScript usable by a browser like chrome, firefox, etc.
+
+    Another tech is Socket.IO, which is a library that enables low-latency, bidirectional and event-based communication between a client and a server. This tech basically works from client to server to client. It is built on top of the WebSocket protocol and provides additional guarantees like a fallback to HTTP long-polling or automatic reconnection.
+    
+    I have faced many other challenges to use this framework for the first time. It’s really another way to set up routes instead of React. Our team also uses different types of technology to complete the task. I think we will comfort at this level soon.
+    `
+
+    const ihsanNasifBlog = `
+    The bidirectional channel between the Socket.IO server (Node.js) and the Socket.IO client (browser, Node.js, or any programming language) is established with a WebSocket connection whenever possible and will use HTTP long-polling as a fallback, The Socket.IO codebase is split into two distinct layers.
+    the low-level plumbing that we call Engine.IO, the engine inside Socket.IO,
+    the high-level API: Socket.IO itself,
+    
+    Engine.IO handles establishing the low-level connection between the server and the client.
+    
+    The HTTP long-polling transport consists of successive HTTP requests:
+    long-running GET requests, for taking data from the server, short-running POST requests, for sending data to the server, Because of the nature of the transport, successive emits may be joined and sent within the same HTTP request.
+    `
+
+    const SakilShikdarBlog = `
+    Redux is an open-source JavaScript library used to manage application state containers for JavaScript apps, it is a state management tool, But it does not belong to the component state, It is a container where you can store your whole application data, In a simple way we can say that it is a kind of array.
+    `
+
     return (
         <div>
             <div>
@@ -45,15 +67,15 @@ const AllBlog = () => {
                                         <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
                                             2022</span>
                                             <div>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 ">Tips</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 mx-2">React</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500">Javascript</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
                                             </div>
                                         </div>
                                         <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
                                             What is spreadsheet? What Is the Purpose of Using a Spreadsheet?</Link>
                                             <p class="mt-2 text-gray-600">A spreadsheet is a computer program that can capture, display and manipulate data arranged in rows and columns. Spreadsheets are one of the most popular tools available with personal computers.
-                                                
+
                                                 <br /><span className='font-bold text-xl'>Advantages of Spreadsheets</span>
                                                 <li>1. Spreadsheets require minimal training.</li>
                                                 <li>2. Spreadsheets are customizable.</li>
@@ -84,10 +106,9 @@ const AllBlog = () => {
 
                                         </div>
                                         <div class="flex justify-end mt-4">
-                                            {/* <Link to="#" class="text-blue-500 hover:underline">Read more</Link> */}
                                             <div>
                                                 <Link to="#" class="flex items-center"><img
-                                                    src="https://i.ibb.co/FVgsghc/Rana-photo-1.jpg"
+                                                    src="https://i.ibb.co/WthYKKN/rana1.jpg"
                                                     alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
                                                     <h5 class="font-bold text-gray-700 hover:underline">Md. Rana Hossain</h5>
                                                 </Link>
@@ -100,9 +121,9 @@ const AllBlog = () => {
                                         <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
                                             2022</span>
                                             <div>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 ">Tips</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 mx-2">React</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500">Javascript</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
                                             </div>
                                         </div>
                                         <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
@@ -138,12 +159,11 @@ const AllBlog = () => {
 
                                         </div>
                                         <div class="flex justify-end mt-4">
-                                            {/* <Link to="#" class="text-blue-500 hover:underline">Read more</Link> */}
                                             <div>
                                                 <Link to="#" class="flex items-center"><img
-                                                    src="https://i.ibb.co/FVgsghc/Rana-photo-1.jpg"
+                                                    src="https://i.ibb.co/DzxVNxR/293929767-755191202236359-2522477008241228207-n.png"
                                                     alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
-                                                    <h5 class="font-bold text-gray-700 hover:underline">Md. Rana Hossain</h5>
+                                                    <h5 class="font-bold text-gray-700 hover:underline">Md Emran Hossain</h5>
                                                 </Link>
                                             </div>
                                         </div>
@@ -154,9 +174,9 @@ const AllBlog = () => {
                                         <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
                                             2022</span>
                                             <div>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 ">Tips</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 mx-2">React</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500">Javascript</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600  rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
                                             </div>
                                         </div>
                                         <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
@@ -190,12 +210,11 @@ const AllBlog = () => {
 
                                         </div>
                                         <div class="flex justify-end mt-4">
-                                            {/* <Link to="#" class="text-blue-500 hover:underline">Read more</Link> */}
                                             <div>
                                                 <Link to="#" class="flex items-center"><img
-                                                    src="https://i.ibb.co/FVgsghc/Rana-photo-1.jpg"
+                                                    src="https://i.ibb.co/4dQ9YRC/285660174-1147310632573281-4290096358933552062-n.jpg"
                                                     alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
-                                                    <h5 class="font-bold text-gray-700 hover:underline">Md. Rana Hossain</h5>
+                                                    <h5 class="font-bold text-gray-700 hover:underline">Shahriar Mosharaf Fahim</h5>
                                                 </Link>
                                             </div>
                                         </div>
@@ -206,29 +225,25 @@ const AllBlog = () => {
                                         <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
                                             2022</span>
                                             <div>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 ">Tips</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500 mx-2">React</Link>
-                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-accent rounded hover:bg-gray-500">Javascript</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
                                             </div>
                                         </div>
                                         <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
-                                            WHAT IS NEXTJS? </Link>
+                                            WHAT IS NEXTJS? What are the most prominent features of Next.js? </Link>
                                             <p class="mt-2 text-gray-600">
-                                                Web technologies are growing and changing almost on a monthly basis. Making any decision requires knowing the pros and cons of each option beforehand, and it’s becoming more challenging to make a good choice with confidence.
-                                                <br />That's why I,m selected to learn and talk about the Next JS – React-powered javascript framework that helps build a truly outstanding and customized user experience more accessible.
-                                                <br /><span className='font-bold text-xl'>NextJS comes with three main advantages:</span>
-                                                <li>Better user experience</li>
-                                                <li>Above-average performance</li>
-                                                <li>Rapid feature development</li>
-                                                <span className='font-bold text-xl'>Goals you can achieve with NextJS:</span>
-                                                <li>1. Increase in conversion rate and sales</li>
-                                                <li>2. Boost of marketing channels</li>
-                                                <li>3. Overtake of competition</li>
-                                                <li>4. Better user experience</li>
-                                                <li>5. Lower maintenance costs</li>
-                                                <li>6. Easier business scaling</li>
-                                                <li>7. Lower maintenance costs</li>
-                                                <li>8. Improve the performance of your website or web app</li>
+                                                Recently I have explored new technology like Next.js. Next.js is a React framework that enables several extra features, including server-side rendering and generating static websites. And React is also a JavaScript library that is basically used to build web applications rendered in the client's browser with JavaScript. Developers are recognize several problems with this strategy, however, such as not catering to users who do not have access to JavaScript or have disabled it, potential security issues, significantly extended page loading times, and it can harm the site's overall search engine optimization.
+                                                <br /><span className='font-bold text-xl'>Following is a list of the most prominent features of Next.js that excite the developers most:</span>
+                                                <li>js provides the by default and easy server rendering.</li>
+                                                <li>js supports static exporting.</li>
+                                                <li>It seaports automatic code-splitting for faster page loads.</li>
+                                                <span className='font-bold text-xl'>Besides this, Next.js also has some awesome features such as:</span>
+                                                <li>1. Dynamic styles and themes support</li>
+                                                <li>2. Built-in CSS vendor prefixing</li>
+                                                <li>3. CSS Preprocessing via Plugins</li>
+                                                <li>4. Full CSS support, no tradeoffs in power</li>
+                                                <li>5. It provides source maps support</li>
                                             </p>
                                             <ReactReadMoreReadLess
                                                 charLimit={70}
@@ -237,17 +252,106 @@ const AllBlog = () => {
                                                 readMoreClassName="read-more-less--more"
                                                 readLessClassName="read-more-less--less"
                                             >
-                                                {FahimBlog}
+                                                {ThowhiduzzamanBlog}
                                             </ReactReadMoreReadLess>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
-                                            {/* <Link to="#" class="text-blue-500 hover:underline">Read more</Link> */}
                                             <div>
                                                 <Link to="#" class="flex items-center"><img
-                                                    src="https://i.ibb.co/FVgsghc/Rana-photo-1.jpg"
+                                                    src="https://i.ibb.co/r6rkkdp/Thowhid-black-bg.jpg"
                                                     alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
-                                                    <h5 class="font-bold text-gray-700 hover:underline">Md. Rana Hossain</h5>
+                                                    <h5 class="font-bold text-gray-700 hover:underline">Md. Thowhiduzzaman</h5>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                                        <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
+                                            2022</span>
+                                            <div>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                            What is Socket Io ? </Link>
+                                            <p class="mt-2 text-gray-600">
+                                                Socket.IO aims to make realtime apps possible in every browser and mobile device, blurring the differences between the different transport mechanisms. It supports multiple transports, such as WebSockets, Flash sockets, long polling and more, automatically falling back when a transport fails
+                                                <br /><span className='font-bold mt-5'>Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server.</span>
+                                                <img src='https://i.ibb.co/PzSBF50/bidirectional-communication.png' alt="" />
+                                                <span>It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection.</span>
+                                                <p className='mt-5'>Socket.IO is a library that is an event-driven library for real-time web applications and provides real-time and full-duplex communication between the Client and the Web servers, Generally, it is divided into two parts: a client-side library that runs in the browser, and a server-side library for Node.js.</p>
+                                            </p>
+                                            <ReactReadMoreReadLess
+                                                charLimit={70}
+                                                readMoreText={"Read more ▼"}
+                                                readLessText={"Read less ▲"}
+                                                readMoreClassName="read-more-less--more"
+                                                readLessClassName="read-more-less--less"
+                                            >
+                                                {ihsanNasifBlog}
+                                            </ReactReadMoreReadLess>
+
+                                        </div>
+                                        <div class="flex justify-end mt-4">
+                                            <div>
+                                                <Link to="#" class="flex items-center"><img
+                                                    src="https://i.ibb.co/xj6gsFf/ihsan.jpg"
+                                                    alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
+                                                    <h5 class="font-bold text-gray-700 hover:underline">Chowdhury Ihsan</h5>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                                        <div class="flex items-center justify-between"><span class="font-light text-gray-600">Aug 4,
+                                            2022</span>
+                                            <div>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white ">Tips</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white mx-2">React</Link>
+                                                <Link to="#" class="px-2 py-1 font-bold text-gray-100 bg-purple-600 rounded hover:bg-white">Javascript</Link>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2"><Link to="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                            What is Redux in React js? What are the advantages of using Redux?</Link>
+                                            <p class="mt-2 text-gray-600">
+                                                Redux in React is the official React binding for Redux which allows the components in React to read data from a Redux Store, and dispatch Actions to the Store for updating the data. The purpose of Redux is to help applications scale well by providing means to manage the state via a unidirectional data flow model.
+                                                <br /><span className='font-bold text-xl'> Advantages of using Redux?</span>
+                                                <li>Redux provides extremely easy state transfer between the components.</li>
+                                                <li>The states are always predictable in Redux and its maintenance is relatively easy.</li>
+                                                <li>Debugging and testing code in Redux is simple through logging behaviour and status.</li>
+                                                <li>Redux also offers state persistence by storing the application's state to local storage and restoring it after a refresh.</li>
+                                                <span className='font-bold text-xl'>Name all the Redux Store methods.</span>
+                                                <p>All the Redux Store Methods are as follows:</p>
+                                                <li>getState()</li>
+                                                <li>subscribe(listener)</li>
+                                                <li>dispatch(action)</li>
+                                                <li>Full CSS support, no tradeoffs in power</li>
+                                                <li>replaceReducer(nextReducer)</li>
+                                            </p>
+                                            <ReactReadMoreReadLess
+                                                charLimit={70}
+                                                readMoreText={"Read more ▼"}
+                                                readLessText={"Read less ▲"}
+                                                readMoreClassName="read-more-less--more"
+                                                readLessClassName="read-more-less--less"
+                                            >
+                                                {SakilShikdarBlog}
+                                            </ReactReadMoreReadLess>
+
+                                        </div>
+                                        <div class="flex justify-end mt-4">
+                                            <div>
+                                                <Link to="#" class="flex items-center"><img
+                                                    src="https://i.ibb.co/d748BMc/sakil.jpg"
+                                                    alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" />
+                                                    <h5 class="font-bold text-gray-700 hover:underline">Sakil shikdar</h5>
                                                 </Link>
                                             </div>
                                         </div>
@@ -302,15 +406,15 @@ const AllBlog = () => {
                                     <h5 class="mb-4 text-xl font-bold text-gray-700">Recent Post</h5>
                                     <div class="flex flex-col max-w-sm px-8 py-6 mx-auto bg-white rounded-lg shadow-md">
                                         <div class="flex items-center justify-center"><Link to="#"
-                                            class="px-2 py-1 text-sm text-green-100 bg-accent rounded hover:bg-gray-500">React</Link>
+                                            class="px-2 py-1 text-sm text-green-100 bg-purple-600 rounded hover:bg-white">React</Link>
                                         </div>
                                         <div class="mt-4"><Link to="#" class="text-lg font-medium text-gray-700 hover:underline">How will you improve the performance of a React Application.</Link></div>
                                         <div class="flex items-center justify-between mt-4">
                                             <div class="flex items-center"><img
-                                                src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+                                                src="https://i.ibb.co/FVgsghc/Rana-photo-1.jpg"
                                                 alt="avatar" class="object-cover w-8 h-8 rounded-full" /><Link to="#"
-                                                    class="mx-3 text-sm text-gray-700 hover:underline">Chy IHsan</Link></div><span
-                                                        class="text-sm font-light text-gray-600">May 21, 2020</span>
+                                                    class="mx-3 text-sm text-gray-700 hover:underline">Rana Hossain</Link></div><span
+                                                        class="text-sm font-light text-gray-600">Aug 12, 2022</span>
                                         </div>
                                     </div>
                                 </div>
