@@ -7,10 +7,13 @@ import json from '../QuestionOne';
 
 
 const SurveyTypeOne = () => {
+    console.log(json);
     return (
-       <Survey.Survey
-       json={json}
-       />
+        <div>
+            <Survey.Survey
+                json={json}
+            />
+        </div>
     );
 };
 

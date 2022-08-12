@@ -21,7 +21,12 @@ import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
 import Spreadsheets from './Pages/Spreadsheets/Spreadsheets';
+import SurveyOne from './Pages/Surveys/SurveyOne';
 import AllBlog from './Pages/AllBlog/AllBlog';
+import Schedulers from './Pages/Schedulers/Schedulers';
+import TextEditor from './Pages/TextEditor/TextEditor';
+import Paint from './Pages/Paint/Paint';
+import WorkFlow from './Pages/WorkFlow/WorkFLow';
 
 
 
@@ -35,6 +40,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/live-chat" element={<LiveChat />} />
         <Route path="/spreadsheet" element={<Spreadsheets />} />
+        <Route path="/surveyOne" element={<SurveyOne />} />
+        <Route path="/Schedulers" element={<Schedulers />} />
+        <Route path="/textEditor" element={<TextEditor />} />
+        <Route path="/Paint" element={<Paint />} />
+        <Route path="/workFlow" element={<WorkFlow />} />
         <Route path="/allBlog" element={<AllBlog />} />
         <Route path="/inventory" element={<Inventtory />} />
         <Route path="/project" element={<ProjectLanding />} />

@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-
+// syncfusion license:-
 registerLicense('ORg4AjUWIQA/Gnt2VVhiQlFadVlJVHxLYVF2R2FJfFRzd19CYEwgOX1dQl9hSXZTdURhXXlbeXVTT2A=');
 
 

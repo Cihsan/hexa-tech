@@ -23,7 +23,12 @@ const Navbar = () => {
             <li><Link to='/Inventory'>Inventory</Link></li>
             <li><Link to='/project'>Project</Link></li>
             <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
+            <li><Link to='/surveyOne'>Survey</Link></li>
             <li><Link to='/allBlog'>Blog</Link></li>
+            <li><Link to='/Schedulers'>Scheduler</Link></li>
+            <li><Link to='/textEditor'>Texteditor</Link></li>
+            <li><Link to='/Paint'>Paint</Link></li>
+            <li><Link to='/workFlow'>workFLow</Link></li>
             {
               user ?
                 <div class="dropdown dropdown-end">
@@ -50,7 +55,12 @@ const Navbar = () => {
           <li><Link to='/project'>Project</Link></li>
           <li><Link to='/live-chat'>Message</Link></li>
           <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
+          <li><Link to='/surveyOne'>Survey</Link></li>
           <li><Link to='/allBlog'>Blog</Link></li>
+          <li><Link to='/Schedulers'>Scheduler</Link></li>
+          <li><Link to='/textEditor'>Texteditor</Link></li>
+          <li><Link to='/Paint'>Paint</Link></li>
+          <li><Link to='/workFlow'>workFLow</Link></li>
           {
             user ?
               <div class="dropdown dropdown-end">

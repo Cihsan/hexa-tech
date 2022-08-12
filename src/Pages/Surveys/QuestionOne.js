@@ -59,9 +59,12 @@ const json = {
             ]
         }
     ],
-    completedHtml: "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4>"
+    completedHtml: `<h1 className='font-mono'>Certificate of Archievement</h1><h6 className='text-6xl h-1'>|</h6><h3 className='font-bold'>Got a Score Of</h3><p className='text-center text-2xl'><b>{correctedAnswers}</b> / <b>{questionCount}</b></p><h4 className='text-center font-bold'>On</h4><h5 className='text-2xl'>HexaTech MCQ Quiz Questions And Answers</h5>`
 };
 export default json;
+
+
+
 
 
 
