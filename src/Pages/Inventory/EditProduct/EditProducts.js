@@ -2,7 +2,7 @@ import React from 'react';
 // import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 // import auth from '../../../firebase.init';
 
 
@@ -27,7 +27,13 @@ const EditProducts = () => {
             .then(data => {
                 reset()
                 if(data){
-                    toast.success('Item Update Sucessfully')
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Item Update Sucessfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
                     navigate('/dashboard/manageInventory')
                 }
             })

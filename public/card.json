@@ -1,0 +1,50 @@
+[
+    {
+        "_id": 1,
+        "name": "Md Rana Hossain",
+        "subName": "Web Developer",
+        "phone": "01952452768",
+        "Email": "rana286090@gmail.com",
+        "logo": "https://i.ibb.co/VpfP4Sx/rana.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Md Anik Hossain",
+        "subName": "Fullstack Developer",
+        "phone": "01812817422",
+        "Email": "anikh499@gmail.com",
+        "logo": "https://i.ibb.co/7KZw3xd/anik.png"
+    },
+    {
+        "_id": 3,
+        "name": "Hexa Tech",
+        "subName": "It Solution",
+        "phone": "01862254896",
+        "Email": "hexatech@gmail.com",
+        "logo": "https://i.ibb.co/cY1Nq3L/hexa.png"
+    },
+    {
+        "_id": 4,
+        "name": "AR It",
+        "subName": "It Company",
+        "phone": "01862212345",
+        "Email": "ar@gmail.com",
+        "logo": "https://i.ibb.co/fp24h3N/AR.jpg"
+    },
+    {
+        "_id": 5,
+        "name": "Tech Challenger",
+        "subName": "Analytics company",
+        "phone": "01862254321",
+        "Email": "tech-challenger@gmail.com",
+        "logo": "https://i.ibb.co/fH8D4LB/challenger.png"
+    },
+    {
+        "_id": 6,
+        "name": "Ihsan Chowdhury",
+        "subName": "MERN stack",
+        "phone": "01969089211",
+        "Email": "ihsan@gmail.com",
+        "logo": "https://i.ibb.co/Fznftnb/ihsan.png"
+    }
+]

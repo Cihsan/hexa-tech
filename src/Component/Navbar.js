@@ -25,10 +25,12 @@ const Navbar = () => {
             <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
             <li><Link to='/surveyOne'>Survey</Link></li>
             <li><Link to='/allBlog'>Blog</Link></li>
-            <li><Link to='/Schedulers'>Scheduler</Link></li>
-            <li><Link to='/textEditor'>Texteditor</Link></li>
-            <li><Link to='/Paint'>Paint</Link></li>
-            <li><Link to='/workFlow'>workFLow</Link></li>
+            {/* <li><Link to='/Schedulers'>Scheduler</Link></li>
+            <li><Link to='/textEditor'>Texteditor</Link></li> */}
+            {/* <li><Link to='/Paint'>Paint</Link></li>
+            <li><Link to='/workFlow'>workFLow</Link></li> */}
+            <li><Link to='/formBuilder'>Form Builder</Link></li>
+            <li><Link to='/businessCardsOne'>Business Cards</Link></li>
             {
               user ?
                 <div class="dropdown dropdown-end">
@@ -57,10 +59,12 @@ const Navbar = () => {
           <li><Link to='/spreadsheet'>Spreadsheet</Link></li>
           <li><Link to='/surveyOne'>Survey</Link></li>
           <li><Link to='/allBlog'>Blog</Link></li>
-          <li><Link to='/Schedulers'>Scheduler</Link></li>
-          <li><Link to='/textEditor'>Texteditor</Link></li>
-          <li><Link to='/Paint'>Paint</Link></li>
-          <li><Link to='/workFlow'>workFLow</Link></li>
+          {/* <li><Link to='/Schedulers'>Scheduler</Link></li>
+          <li><Link to='/textEditor'>Texteditor</Link></li> */}
+          {/* <li><Link to='/Paint'>Paint</Link></li>
+          <li><Link to='/workFlow'>workFLow</Link></li> */}
+          <li><Link to='/formBuilder'>Form Builder</Link></li>
+          <li><Link to='/businessCardsOne'>Business Cards</Link></li>
           {
             user ?
               <div class="dropdown dropdown-end">

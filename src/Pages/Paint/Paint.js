@@ -28,14 +28,14 @@ const Paint = () => {
         <div>
             <button
                 onClick={handlePrint}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-5">Print Your Paint!</button>
+                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Print Your Paint!</button>
             <button onClick={handleClick}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-5">Save Drawing</button>
+                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Save Drawing</button>
             <button onClick={clear}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-5"
+                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
             >Clear</button>
             <button onClick={undo}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-5"
+                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
             >Undo</button>
 
             <div>
@@ -50,7 +50,7 @@ const Paint = () => {
                 />
             </div>
             <div ref={componentRef}>
-                <h3 className='text-center text-2xl'>View your saved output</h3>
+                <h3 className='text-center text-2xl text-primary'>View your saved output</h3>
                 <CanvasDraw
                     style={{ width: "100%", marginTop: "5%" }}
                     hideGrid={true}
@@ -59,6 +59,7 @@ const Paint = () => {
                     canvasHeight={400}
                 />
             </div>
+
         </div>
     );
 };
