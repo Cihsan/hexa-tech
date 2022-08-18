@@ -4,9 +4,9 @@ import { useState } from "react";
 const useBusinessCard = () => {
     const [businessCard, setBusinessCard] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000")
+        fetch("http://localhost:5000/businessCard")
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setBusinessCard(data))
     },[])
     return [businessCard, setBusinessCard];
 };

@@ -29,8 +29,9 @@ const Navbar = () => {
             <li><Link to='/textEditor'>Texteditor</Link></li> */}
             {/* <li><Link to='/Paint'>Paint</Link></li>
             <li><Link to='/workFlow'>workFLow</Link></li> */}
-            <li><Link to='/formBuilder'>Form Builder</Link></li>
+            {/* <li><Link to='/formBuilder'>Form Builder</Link></li> */}
             <li><Link to='/businessCardsOne'>Business Cards</Link></li>
+            <li><Link to='/qrCode'>QRCode Generate</Link></li>
             {
               user ?
                 <div class="dropdown dropdown-end">
@@ -63,8 +64,9 @@ const Navbar = () => {
           <li><Link to='/textEditor'>Texteditor</Link></li> */}
           {/* <li><Link to='/Paint'>Paint</Link></li>
           <li><Link to='/workFlow'>workFLow</Link></li> */}
-          <li><Link to='/formBuilder'>Form Builder</Link></li>
+          {/* <li><Link to='/formBuilder'>Form Builder</Link></li> */}
           <li><Link to='/businessCardsOne'>Business Cards</Link></li>
+          <li><Link to='/qrCode'>QRCode Generate</Link></li>
           {
             user ?
               <div class="dropdown dropdown-end">

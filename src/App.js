@@ -28,7 +28,9 @@ import TextEditor from './Pages/TextEditor/TextEditor';
 import Paint from './Pages/Paint/Paint';
 import WorkFlow from './Pages/WorkFlow/WorkFLow';
 import FormsDynamic from './Pages/FormsDynamic/FormsDynamic';
-import BusinessCardsOne from './Pages/BusinessCards/BusinessCardsOne';
+import QRCodeGenerate from './Pages/QRCodeGenerate/QRCodeGenerate';
+
+
 
 // import MindNode from './Pages/WorkFlow/MindNode';
 
@@ -50,8 +52,8 @@ function App() {
         <Route path="/textEditor" element={<TextEditor />} />
         <Route path="/formBuilder" element={<FormsDynamic />} />
         <Route path="/Paint" element={<Paint />} />
+        <Route path="/qrCode" element={<QRCodeGenerate />} />
         <Route path="/workFlow" element={<WorkFlow/>} />
-        <Route path="/businessCardsOne" element={<BusinessCardsOne/>} />
         <Route path="/allBlog" element={<AllBlog />} />
         <Route path="/inventory" element={<Inventtory />} />
         <Route path="/project" element={<ProjectLanding />} />
