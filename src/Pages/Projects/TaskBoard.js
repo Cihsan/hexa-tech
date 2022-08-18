@@ -18,6 +18,7 @@ const TaskBoard = () => {
                     <Link to='/task/taskAdd' className='font-bold link-hover hover:text-cyan-400'>Add Task</Link>
                     <Link to='/task/employee' className='font-bold link-hover mb-2 mt-2 hover:text-cyan-400'>Employee Overview</Link>
                     <Link to='/task/addEmployee' className='font-bold link-hover hover:text-cyan-400'>Add Employee</Link>
+                    <Link to='/task/user' className='font-bold link-hover hover:text-cyan-400'>User</Link>
                 </ul>
             </div>
         </div>

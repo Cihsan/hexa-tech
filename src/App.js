@@ -20,6 +20,7 @@ import EditProducts from './Pages/Inventory/EditProduct/EditProducts';
 import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
+import User from './Pages/Projects/User';
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="taskAdd" element={<TaskAdd />} />
           <Route path="employee" element={<EmployeeHome />} />
           <Route path="addEmployee" element={<AddEmployee />} />
+          <Route path='user' element={<User />} />
         </Route>
       </Routes>
       <ToastContainer></ToastContainer>
