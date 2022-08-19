@@ -1,16 +1,15 @@
 import './App.css';
-import EmployeHome from './EmployeHome/EmployeHome';
-// import NewEmploy from './NewEmploy/NewEmploye'
-// import MotherFinance from "./MotherFinanceApp/MotherFinance"
 
-// import Dashboard from './Page/Dashboard';
-// import EmployMToolDashboard from "./EmployMenagemant Tool/EmployMToolDashboard"
+import EmployeHome from './EmployeHome/EmployeHome';
+import DragAndDrop from "./DragAndDropp/DragAndDrop"
+
 function App() {
   return (
     <div>
+      <DragAndDrop></DragAndDrop>
       <EmployeHome></EmployeHome>
-      {/* <MotherFinance></MotherFinance> */}
-      {/* <NewEmploy></NewEmploy> */}
+     
+      
     </div>
   );
 }
