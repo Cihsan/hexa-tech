@@ -126,10 +126,10 @@ function App() {
 
 
   return (
-    <div className="" >
-      <div className='flex justify-center'>
+    <div className=" py-10" >
+      <div className='flex justify-center items-center'>
         {/* <input  type="text" value={text} onChange={(e) => setText(e.target.value)} /> */}
-      <div className='felx'>
+      <div className='felx  '>
       <input type="text" placeholder="Type here" value={text} onChange={(e) => setText(e.target.value)} class="input input-bordered input-secondary w-full max-w-xs" />
         <button className='btn btn-success btn-xs sm:btn-sm md:btn-md ' onClick={addItem}>Add text</button>
 
