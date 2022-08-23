@@ -21,6 +21,9 @@ import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
 import User from './Pages/Projects/User';
+import updateUser from './Pages/ProjectLanding/updateUser';
+import NoteHome from './Pages/notecomponents/NoteHome';
+// import NoteHome from './pages/P'
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
 
 function App() {
@@ -46,6 +49,8 @@ function App() {
           <Route path="employee" element={<EmployeeHome />} />
           <Route path="addEmployee" element={<AddEmployee />} />
           <Route path='user' element={<User />} />
+          {/* <Route path='note' element={<NoteHome />} /> */}
+          <Route path='updateUser' element={<updateUser />} />
         </Route>
       </Routes>
       <ToastContainer></ToastContainer>

@@ -56,7 +56,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
         <div className="small-container  mb-20">
             <form className='' onSubmit={handleUpdate}>
                 <h1>Edit <span className='bg-text'>Employee</span> Dtails !</h1>
-                <label htmlFor="firstName">First Name</label>
+                <label htmlhtmlFor="firstName">First Name</label>
                 <input
                     id="firstName"
                     type="text"
@@ -64,7 +64,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                 />
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlhtmlFor="lastName">Last Name</label>
                 <input
                     id="lastName"
                     type="text"
@@ -72,7 +72,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     value={lastName}
                     onChange={e => setLastName(e.target.value)}
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlhtmlFor="email">Email</label>
                 <input
                     id="email"
                     type="email"
@@ -80,7 +80,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Salary ($)</label>
+                <label htmlhtmlFor="salary">Salary ($)</label>
                 <input
                     id="salary"
                     type="number"
@@ -88,7 +88,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     value={salary}
                     onChange={e => setSalary(e.target.value)}
                 />
-                <label htmlFor="date">Date</label>
+                <label htmlhtmlFor="date">Date</label>
                 <input
                     id="date"
                     type="date"

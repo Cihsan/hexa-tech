@@ -67,7 +67,7 @@ const Purchase = () => {
           <div className="flex items-center p-10 mb-12 bg-[#FBFAFA]  h-[128px]">
             <label
               className=" text-red-500 text-md font-bold mb-2 w-[160px] inline-block"
-              for="vendor-name"
+              htmlFor="vendor-name"
             >
               Vendor Name*
             </label>
@@ -81,7 +81,7 @@ const Purchase = () => {
           <div className="flex items-center mb-4">
             <label
               className="w-[160px] inline-block  text-red-500 text-md font-bold mb-2"
-              for="purchaser"
+              htmlFor="purchaser"
             >
               Purchaser
             </label>
@@ -95,7 +95,7 @@ const Purchase = () => {
           <div className="flex items-center mb-4">
             <label
               className="w-[160px] inline-block  text-red-500 text-md font-bold mb-2"
-              for="purchase-date"
+              htmlFor="purchase-date"
             >
               Purchase Date*
             </label>
@@ -110,7 +110,7 @@ const Purchase = () => {
           <div className="flex items-center mb-4">
             <label
               className="w-[160px] inline-block  text-black text-md font-bold mb-2"
-              for="product-name"
+              htmlFor="product-name"
             >
               Product Name
             </label>
@@ -124,7 +124,7 @@ const Purchase = () => {
           <div className="flex items-center mb-4">
             <label
               className="w-[160px] inline-block  text-black text-md font-bold mb-2"
-              for="product qnty"
+              htmlFor="product qnty"
             >
               Quantity
             </label>
@@ -138,7 +138,7 @@ const Purchase = () => {
           <div className="flex items-center mb-4">
             <label
               className="w-[160px] inline-block  text-black text-md font-bold mb-2"
-              for="product price"
+              htmlFor="product price"
             >
               Price
             </label>

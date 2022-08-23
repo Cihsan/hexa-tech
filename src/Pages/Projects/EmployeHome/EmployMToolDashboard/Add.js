@@ -54,7 +54,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
         <div className="small-container mb-20">
             <form onSubmit={handleAdd}>
                 <h1>Add <span className='bg-text'>Employee</span> !</h1>
-                <label htmlFor="firstName">First Name</label>
+                <label htmlhtmlFor="firstName">First Name</label>
                 <input
                     id="firstName"
                     type="text"
@@ -63,7 +63,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                 />
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlhtmlFor="lastName">Last Name</label>
                 <input
                     id="lastName"
                     type="text"
@@ -71,7 +71,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={lastName}
                     onChange={e => setLastName(e.target.value)}
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlhtmlFor="email">Email</label>
                 <input
                     id="email"
                     type="email"
@@ -79,7 +79,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Salary ($)</label>
+                <label htmlhtmlFor="salary">Salary ($)</label>
                 <input
                     id="salary"
                     type="number"
@@ -87,7 +87,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={salary}
                     onChange={e => setSalary(e.target.value)}
                 />
-                <label htmlFor="date">Date</label>
+                <label htmlhtmlFor="date">Date</label>
                 <input
                     id="date"
                     type="date"

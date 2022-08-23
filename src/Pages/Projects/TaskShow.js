@@ -12,8 +12,8 @@ const TaskShow = () => {
         <div className='lg:mx-40 my-16'>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                 <div className="card w-96 bg-base-100 text-primary-content">
-                    <div className="card-body">
                         <h2 className="card-title text-primary">Task Information</h2>
+                    <div className="card-body">
                         {
                             tasks.map(task =>
                                 <div>
