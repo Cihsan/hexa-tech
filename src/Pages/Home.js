@@ -5,6 +5,7 @@ import Footer from '../Component/Footer';
 import Herobanner from '../Component/Herobanner';
 import Service from '../Component/Service';
 import TestNav from '../Component/testNav';
+import NoteHome from './Projects/notecomponents/NoteHome'
 //import FAQ from '../Component/FAQ';
 //import Heroservice from '../Component/Heroservice';
 //import Info from '../Component/Info';
@@ -18,6 +19,7 @@ const Home = () => {
     return (
         <div>
             {/* <Nav/> */}
+            <NoteHome />
             <Herobanner />
             <Service/>
             {/* <Heroservice /> */}
