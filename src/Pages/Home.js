@@ -4,6 +4,7 @@ import Features from '../Component/Features';
 import Footer from '../Component/Footer';
 import Herobanner from '../Component/Herobanner';
 import Service from '../Component/Service';
+import TestNav from '../Component/testNav';
 //import FAQ from '../Component/FAQ';
 //import Heroservice from '../Component/Heroservice';
 //import Info from '../Component/Info';

@@ -3,6 +3,7 @@ import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom'
 import auth from '../firebase.init';
+import NavList from './NavList';
 
 
 const Navbar = () => {
@@ -39,6 +40,23 @@ const Navbar = () => {
             {!user && <li><Link to='/register'>Register</Link></li>}
           </ul>
         </div>
+        {/* <div class="dropdown dropdown-end lg:hidden">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src={user?.photoURL} />
+              </div>
+            </label>
+            <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div> */}
         <Link to='/' class="btn btn-ghost normal-case text-xl">Hexa-Tech</Link>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -63,8 +81,9 @@ const Navbar = () => {
           }
           {!user && <li><Link to='/register'>Register</Link></li>}
         </ul>
-      </div>
 
+      </div>
+      <NavList />
     </div>
   )
 }
