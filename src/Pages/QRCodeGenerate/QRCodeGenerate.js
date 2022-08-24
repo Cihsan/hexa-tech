@@ -28,7 +28,6 @@ const QRCodeGenerate = () => {
             id="qrCode"
             value={url}
             size={180}
-            bgColor={"#f8f9fa"}
             fgColor={"#023e8a"}
             level={"H"}
         />
@@ -52,7 +51,7 @@ const QRCodeGenerate = () => {
                     <div ref={qrRef}>{qrcode}</div>
                     <button className="w-full mt-2" type="submit"
                         disabled={!url}>
-                        Download QR code
+                        Download QR Code
                     </button>
                 </form>
             </div>

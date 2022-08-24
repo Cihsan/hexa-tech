@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cometchat-pro/chat": "^3.0.10",
     "@mrblenny/react-flow-chart": "^0.0.14",
     "@syncfusion/ej2-react-documenteditor": "^20.2.40",
     "@syncfusion/ej2-react-richtexteditor": "^20.2.40",
@@ -13,7 +14,6 @@
     "@testing-library/user-event": "^13.5.0",
     "cb-react-forms": "^1.1.0",
     "firebase": "^9.9.1",
-    "qrcode": "^1.5.1",
     "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-canvas-draw": "^1.2.1",
@@ -29,6 +29,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll-to-top": "^3.0.0",
+    "react-simple-chatbot": "^0.6.1",
     "react-spreadsheet": "^0.7.5",
     "react-to-print": "^2.14.7",
     "react-toastify": "^9.0.7",

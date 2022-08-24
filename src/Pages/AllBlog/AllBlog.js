@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ReactReadMoreReadLess from "react-read-more-read-less";
+import ReadMoreReact from 'read-more-react';
 
 const AllBlog = () => {
     const RanaBlog =
@@ -94,15 +94,8 @@ const AllBlog = () => {
                                                 <li>6. Reporting is painful.</li>
                                                 <li>7. Visualizing data is difficult.</li>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={60}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {RanaBlog}
-                                            </ReactReadMoreReadLess>
+                        
+                                            <ReadMoreReact text={RanaBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
@@ -147,15 +140,8 @@ const AllBlog = () => {
                                                 <li>2. Click create sprint at the top of the backlog section</li>
                                                 <li>3. Select Add dates to plan the start and end date of sprin.</li>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={70}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {EmranBlog}
-                                            </ReactReadMoreReadLess>
+                                    
+                                            <ReadMoreReact text={EmranBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
@@ -198,15 +184,8 @@ const AllBlog = () => {
                                                 <li>7. Lower maintenance costs</li>
                                                 <li>8. Improve the performance of your website or web app</li>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={70}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {FahimBlog}
-                                            </ReactReadMoreReadLess>
+                                            
+                                            <ReadMoreReact text={FahimBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
@@ -245,15 +224,8 @@ const AllBlog = () => {
                                                 <li>4. Full CSS support, no tradeoffs in power</li>
                                                 <li>5. It provides source maps support</li>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={70}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {ThowhiduzzamanBlog}
-                                            </ReactReadMoreReadLess>
+                                            
+                                            <ReadMoreReact text={ThowhiduzzamanBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
@@ -286,15 +258,8 @@ const AllBlog = () => {
                                                 <span>It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection.</span>
                                                 <p className='mt-5'>Socket.IO is a library that is an event-driven library for real-time web applications and provides real-time and full-duplex communication between the Client and the Web servers, Generally, it is divided into two parts: a client-side library that runs in the browser, and a server-side library for Node.js.</p>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={70}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {ihsanNasifBlog}
-                                            </ReactReadMoreReadLess>
+
+                                            <ReadMoreReact text={ihsanNasifBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">
@@ -335,15 +300,8 @@ const AllBlog = () => {
                                                 <li>Full CSS support, no tradeoffs in power</li>
                                                 <li>replaceReducer(nextReducer)</li>
                                             </p>
-                                            <ReactReadMoreReadLess
-                                                charLimit={70}
-                                                readMoreText={"Read more ▼"}
-                                                readLessText={"Read less ▲"}
-                                                readMoreClassName="read-more-less--more"
-                                                readLessClassName="read-more-less--less"
-                                            >
-                                                {SakilShikdarBlog}
-                                            </ReactReadMoreReadLess>
+                                            
+                                            <ReadMoreReact text={SakilShikdarBlog} readMoreText={"Read more...▼"}/>
 
                                         </div>
                                         <div class="flex justify-end mt-4">

@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Component/Navbar';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Redirect, Switch } from "react-router-dom";
 import Home from './Pages/Home';
 import ScrollToTop from "react-scroll-to-top";
 import { ToastContainer } from 'react-toastify';
@@ -21,7 +21,6 @@ import ManageProducts from './Pages/Inventory/ManageProducts/ManageProducts';
 import Purchase from './Pages/Inventory/Purchase';
 import LiveChat from './Pages/Message/LiveChat';
 import Spreadsheets from './Pages/Spreadsheets/Spreadsheets';
-import SurveyOne from './Pages/Surveys/SurveyOne';
 import AllBlog from './Pages/AllBlog/AllBlog';
 import Schedulers from './Pages/Schedulers/Schedulers';
 import TextEditor from './Pages/TextEditor/TextEditor';
@@ -29,6 +28,12 @@ import Paint from './Pages/Paint/Paint';
 import WorkFlow from './Pages/WorkFlow/WorkFLow';
 import FormsDynamic from './Pages/FormsDynamic/FormsDynamic';
 import QRCodeGenerate from './Pages/QRCodeGenerate/QRCodeGenerate';
+import Messenger from './Pages/Messenger/Messenger';
+import ExecutiveTeam from './Pages/ExecutiveTeam/ExecutiveTeam';
+import SurveyQuizLanding from './Pages/SurveyQuizLanding/SurveyQuizLanding';
+import SurveyTypeOne from './Pages/Surveys/SurveyTypes/SurveyTypeOne';
+import QuizTypesOne from './Pages/Surveys/SurveyTypes/QuizTypesOne';
+
 
 
 
@@ -47,13 +52,17 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/live-chat" element={<LiveChat />} />
         <Route path="/spreadsheet" element={<Spreadsheets />} />
-        <Route path="/surveyOne" element={<SurveyOne />} />
         <Route path="/Schedulers" element={<Schedulers />} />
         <Route path="/textEditor" element={<TextEditor />} />
         <Route path="/formBuilder" element={<FormsDynamic />} />
+        <Route path="/executiveTeam" element={<ExecutiveTeam />} />
         <Route path="/Paint" element={<Paint />} />
+        <Route path="/surveyQuizLanding" element={<SurveyQuizLanding />} />
+        <Route path="/survey" element={<SurveyTypeOne />} />
+        <Route path="/quiz" element={<QuizTypesOne />} />
+        <Route path="/messanger" element={<Messenger />} />
         <Route path="/qrCode" element={<QRCodeGenerate />} />
-        <Route path="/workFlow" element={<WorkFlow/>} />
+        <Route path="/workFlow" element={<WorkFlow />} />
         <Route path="/allBlog" element={<AllBlog />} />
         <Route path="/inventory" element={<Inventtory />} />
         <Route path="/project" element={<ProjectLanding />} />
