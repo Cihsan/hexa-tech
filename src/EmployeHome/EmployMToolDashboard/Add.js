@@ -54,7 +54,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
         <div className="place-content-center mx-auto card w-96 bg-base-100 shadow-xl  ">
             <form className='mx-auto my-10' onSubmit={handleAdd}>
                 <h1 className='card-title font-bold'>Add <span className='bgtext'>Employee</span> !</h1>
-                <label htmlFor="firstName">Name</label>
+                <label className='employelabel' htmlFor="firstName">Name</label>
                 <input className='input input-bordered w-full max-w-xs'
                     id="firstName"
                     type="text"
@@ -63,7 +63,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                 />
-                <label htmlFor="lastName">Job Position</label>
+                <label className='employelabel' htmlFor="lastName">Job Position</label>
                 <input className='input input-bordered w-full max-w-xs'
                     id="lastName"
                     type="text"
@@ -71,7 +71,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={lastName}
                     onChange={e => setLastName(e.target.value)}
                 />
-                <label htmlFor="email">Email</label>
+                <label className='employelabel' htmlFor="email">Email</label>
                 <input className='input input-bordered w-full max-w-xs'
                     id="email"
                     type="email"
@@ -79,7 +79,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Salary ($)</label>
+                <label className='employelabel' htmlFor="salary">Salary ($)</label>
                 <input className='input input-bordered w-full max-w-xs'
                     id="salary"
                     type="number"
@@ -87,7 +87,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={salary}
                     onChange={e => setSalary(e.target.value)}
                 />
-                <label htmlFor="date">Join Date</label>
+                <label className='employelabel' htmlFor="date">Join Date</label>
                 <input className='input input-bordered w-full max-w-xs'
                     id="date"
                     type="date"

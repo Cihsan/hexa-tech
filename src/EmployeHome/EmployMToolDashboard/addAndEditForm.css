@@ -8,7 +8,7 @@
 .small-container {
   max-width: 800px;
 }
-label {
+.employelabel {
     font-weight: 600;
     max-width: 100%;
     display: block;

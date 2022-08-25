@@ -14,7 +14,7 @@ function List({ employees, handleEdit, handleDelete }) {
     // <table className='striped-table'>
 
     return (
-        <div className=' container  ml-10 bg-slate-500 mb-20 p-2 rounded-xl bg-'>
+        <div className='   ml-10 bg-slate-500 mb-20 p-2 rounded-xl bg-'>
             <table className=' table table-zebra w-full striped-table'>
                 <thead >
                     <tr >
