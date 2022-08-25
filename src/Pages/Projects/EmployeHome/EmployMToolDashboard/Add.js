@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Swal from 'sweetalert2';
-import "./text.css"
+import "./addAndEditForm.css"
 
 function Add({ employees, setEmployees, setIsAdding }) {
 
@@ -25,6 +25,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                 text: 'All fields are required.',
                 showConfirmButton: true
             });
+
         }
 
         const id = employees.length + 1;
@@ -51,11 +52,11 @@ function Add({ employees, setEmployees, setIsAdding }) {
 
 
     return (
-        <div className="small-container mb-20">
-            <form onSubmit={handleAdd}>
-                <h1>Add <span className='bg-text'>Employee</span> !</h1>
-                <label htmlFor="firstName">First Name</label>
-                <input
+        <div className="place-content-center mx-auto card w-96 bg-base-100 shadow-xl  ">
+            <form className='mx-auto my-10' onSubmit={handleAdd}>
+                <h1 className='card-title font-bold'>Add <span className='bgtext'>Employee</span> !</h1>
+                <label htmlFor="firstName">Name</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="firstName"
                     type="text"
                     ref={textInput}
@@ -63,8 +64,8 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                 />
-                <label htmlFor="lastName">Last Name</label>
-                <input
+                <label htmlFor="lastName">Job Position</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="lastName"
                     type="text"
                     name="lastName"
@@ -72,7 +73,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     onChange={e => setLastName(e.target.value)}
                 />
                 <label htmlFor="email">Email</label>
-                <input
+                <input className='input input-bordered w-full max-w-xs'
                     id="email"
                     type="email"
                     name="email"
@@ -80,15 +81,15 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     onChange={e => setEmail(e.target.value)}
                 />
                 <label htmlFor="salary">Salary ($)</label>
-                <input
+                <input className='input input-bordered w-full max-w-xs'
                     id="salary"
                     type="number"
                     name="salary"
                     value={salary}
                     onChange={e => setSalary(e.target.value)}
                 />
-                <label htmlFor="date">Date</label>
-                <input
+                <label htmlFor="date">Join Date</label>
+                <input className='input input-bordered w-full max-w-xs'
                     id="date"
                     type="date"
                     name="date"
@@ -96,10 +97,10 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     onChange={e => setDate(e.target.value)}
                 />
                 <div style={{ marginTop: '30px' }}>
-                    <input type="submit" value="Add" />
+                    <input className="btn btn-active btn-success" type="submit" value="Add" />
                     <input
                         style={{ marginLeft: '12px' }}
-                        className="muted-button"
+                        className="btn btn-error"
                         type="button"
                         value="Cancel"
                         onClick={() => setIsAdding(false)}

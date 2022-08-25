@@ -2,16 +2,16 @@ import React from 'react';
 // import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
-import Swal from 'sweetalert2';
+import { toast } from 'react-toastify';
 // import auth from '../../../firebase.init';
 
 
 const EditProducts = () => {
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, /* formState: { errors } */ } = useForm();
     // const [user] = useAuthState(auth);
     // console.log(user)
-    const navigate = useNavigate()
     const { id } = useParams()
+    const navigate = useNavigate()
 
     const onSubmit = (data) => {
         console.log(data)
@@ -27,13 +27,7 @@ const EditProducts = () => {
             .then(data => {
                 reset()
                 if(data){
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: 'Item Update Sucessfully',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
+                    toast.success('Item Update Sucessfully')
                     navigate('/dashboard/manageInventory')
                 }
             })
@@ -51,40 +45,40 @@ const EditProducts = () => {
                         /> <br /> */}
 
                         <input
-                            className='mb-3 input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 mx-2 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Item Name'
                             type="text" {...register("name")}
-                        /><br />
+                        />
                         <input
-                            className='mb-3 input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 mx-2 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Quantity'
                             type="number" {...register("quantity")}
                         /><br />
                         <input
-                            className='mb-3 input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 mx-2 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter brand'
                             type="text" {...register("brand")}
-                        /><br />
+                        />
                         <input
-                            className='mb-3 input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 mx-2 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Manufacturer'
                             type="text" {...register("manufacturer")}
                         /><br />
                         <input
-                            className='mb-3 input input-bordered input-primary w-full max-w-xs'
+                            className='mb-3 mx-2 input input-bordered input-primary w-full max-w-xs'
                             placeholder='Enter Attributes'
                             type="text"{...register("attributes")}
-                        /><br />
+                        />
 
                         <input
-                            className='mb-3  input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 mx-2  input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Img url'
                             type="text"{...register("img")}
                         /><br />
 
 
                         <textarea
-                            className='mb-2 rounded-md h-36 w-full bg-gray-100  input input-bordered input-primary'
+                            className='mb-3  input input-bordered input-primary w-full max-w-xs'
                             placeholder='Enter Service Details'
                             {...register("description",
                                 {
@@ -94,9 +88,7 @@ const EditProducts = () => {
                                     },
                                 })}
                         /><br />
-                        <label className="label">
-                            {errors.description?.type === 'required' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
-                        </label>
+                        
 
                         <input
                             className='mb-2 bg-purple-600 hover:bg-blue-900 font-bold text-white text-center rounded-md h-12 input input-bordered input-primary w-full max-w-xs'

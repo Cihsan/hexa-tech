@@ -1,15 +1,15 @@
 import React from 'react';
-// import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-// import auth from '../../../firebase.init';
+import auth from '../../../firebase.init';
 
 
 
 const AddProducts = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-    // const [user] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const navigate = useNavigate()
     const onSubmit = (data) => {
         console.log(data)
@@ -24,7 +24,7 @@ const AddProducts = () => {
             .then(res => res.json())
             .then(data => {
                 reset()
-                if(data){
+                if (data) {
                     toast.success('Item added Sucessfully')
                     navigate('/dashboard/manageInventory')
                 }
@@ -36,18 +36,19 @@ const AddProducts = () => {
         <div>
             <h1 className='products-title'>Please Add  Service</h1>
             <div className='text-center'>
-                <div className='mt-16 lg:px-52 sm:px-10'>
+                <div className='mt-10 lg:px-52 sm:px-10'>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                       {/*  <input value={user.email}
-                            className='mb-3  input input-bordered input-primary w-full max-w-xs' required
-                            {...register("email")}
-                        /> <br /> */}
 
+                        <input
+                            className='hidden mb-3 input input-bordered input-primary w-full max-w-xs' required
+                            type="text" value={user.email} {...register("email")}
+                        />
                         <input
                             className='mb-3 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Item Name'
                             type="text" {...register("name")}
-                        /><br />
+                        />
+
                         <input
                             className='mb-3 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Quantity'
@@ -57,7 +58,7 @@ const AddProducts = () => {
                             className='mb-3 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter brand'
                             type="text" {...register("brand")}
-                        /><br />
+                        />
                         <input
                             className='mb-3 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Manufacturer'
@@ -67,17 +68,17 @@ const AddProducts = () => {
                             className='mb-3 input input-bordered input-primary w-full max-w-xs'
                             placeholder='Enter Attributes'
                             type="text"{...register("attributes")}
-                        /><br />
+                        />
 
                         <input
-                            className='mb-3  input input-bordered input-primary w-full max-w-xs' required
+                            className='mb-3 input input-bordered input-primary w-full max-w-xs' required
                             placeholder='Enter Img url'
                             type="text"{...register("img")}
                         /><br />
 
 
                         <textarea
-                            className='mb-2 rounded-md h-36 w-full bg-gray-100  input input-bordered input-primary'
+                            className='mb-3 input input-bordered input-primary w-full max-w-xs'
                             placeholder='Enter Service Details'
                             {...register("description",
                                 {
@@ -99,6 +100,7 @@ const AddProducts = () => {
                     </form>
                 </div>
             </div>
+
         </div>
     );
 };

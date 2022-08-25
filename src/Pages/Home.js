@@ -4,9 +4,9 @@ import Features from '../Component/Features';
 import Footer from '../Component/Footer';
 import Herobanner from '../Component/Herobanner';
 import Service from '../Component/Service';
-//import FAQ from '../Component/FAQ';
+// import FAQ from '../Component/FAQ';
 //import Heroservice from '../Component/Heroservice';
-//import Info from '../Component/Info';
+// import Info from '../Component/Info';
 // import Message from '../Component/Message';
 // import Nav from '../Component/Nav';
 // import Summary from '../Component/Summary';
@@ -22,7 +22,7 @@ const Home = () => {
             {/* <Heroservice /> */}
             {/* <Summary /> */}
             {/* <Testimonial /> */}
-            {/* <FAQ /> */}
+            
             {/* <Info/> */}
             <Features/>
             <Blog/>

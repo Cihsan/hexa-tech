@@ -7,12 +7,12 @@ import ReactFlow, {
     addEdge,
     useReactFlow,
     applyEdgeChanges,
-    applyNodeChanges
+    applyNodeChanges,
+    Controls
 } from 'react-flow-renderer';
 import TextUpdaterNode from './TextUpdaterNode.js';
 
 import './WorkFLow.css';
-import SurveyQuizLanding from '../SurveyQuizLanding/SurveyQuizLanding.js';
 
 const flowKey = 'example-flow';
 
@@ -89,13 +89,13 @@ const WorkFlow = () => {
     return (
         <div>
             <div className='workFlow-container'>
-                <div className="save__controls mt-20 mr-3">
-                    <button className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none" onClick={onAdd}>Add node</button>
-                    <button className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none" onClick={onSave}>save</button>
-                    <button className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none" onClick={onRestore}>Store</button>
-                    <button
+                <div className="save__controls mt-16">
+                    <button title='Add a New Node' className="btn-sm mx-1 hover:bg-primary rounded bg-purple-600 text-white  hover:bg-none mouse-pointer" onClick={onAdd}>Add node</button>
+                    <button title='Save After Get From Store' className="btn-sm mx-1 hover:bg-primary rounded bg-purple-600 text-white  hover:bg-none mouse-pointer" onClick={onSave}>save</button>
+                    <button title='Previous Save' className="btn-sm mx-1 hover:bg-primary rounded bg-purple-600 text-white  hover:bg-none mouse-pointer" onClick={onRestore}>Store</button>
+                    <button title='Print Now Your Working Flow'
                         onClick={handlePrint}
-                        className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-5">Print</button>
+                        className="btn-sm mx-1 hover:bg-primary rounded bg-purple-600 text-white  hover:bg-none mouse-pointer">Print</button>
                 </div>
                 <div style={{ height: 600 }} ref={componentRef}>
                     <ReactFlow
@@ -108,10 +108,10 @@ const WorkFlow = () => {
                         nodeTypes={nodeTypes}
                         fitView
                     >
+                        <Controls />
                     </ReactFlow>
                 </div>
             </div>
-            <SurveyQuizLanding></SurveyQuizLanding>
         </div>
     );
 };

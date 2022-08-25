@@ -26,17 +26,19 @@ const Paint = () => {
     }
     return (
         <div>
+
+            <button onClick={handleClick}
+                className="btn hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Save Drawing</button>
+
+            <button onClick={undo}
+                className="btn hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
+            >Undo</button>
+            <button onClick={clear}
+                className="btn hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
+            >Clear</button>
             <button
                 onClick={handlePrint}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Print Your Paint!</button>
-            <button onClick={handleClick}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Save Drawing</button>
-            <button onClick={clear}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
-            >Clear</button>
-            <button onClick={undo}
-                className="hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2"
-            >Undo</button>
+                className="btn hover:bg-primary rounded bg-purple-600 text-white font-bold hover:bg-none ml-2">Print</button>
 
             <div>
                 <CanvasDraw

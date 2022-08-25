@@ -12,8 +12,8 @@ function TextUpdaterNode({ data }) {
         <div className="text-updater-node">
             <Handle type="target" position={Position.Top} />
             <div>
-            <label htmlFor="bal" style={{height:"0px", marginTop:"-24px"}}>Text:</label>
-                <input className='mt-4' id="text" name="text" onChange={onChange} placeholder="Input Your Text"/>
+                {/* <label htmlFor="bal" style={{ height: "0px", marginTop: "-24px" }}>Text:</label> */}
+                <input className='py-2' id="text" name="text" onChange={onChange} placeholder="Type Here" />
             </div>
             <Handle type="source" position={Position.Bottom} id="a" style={handleStyle} />
             <Handle type="source" position={Position.Bottom} id="b" />

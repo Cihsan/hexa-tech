@@ -5,17 +5,15 @@ import Swal from 'sweetalert2';
 const TaskAdd = () => {
     const reftitle = useRef('')
     const refdesc = useRef('')
-    const refdate = useRef('')
-    const reftime = useRef('')
+    const refdatenTime = useRef('')
 
     const handleSubmit = (even) => {
         even.preventDefault();
         const title = reftitle.current.value;
         const desc = refdesc.current.value;
-        const date = refdate.current.value;
-        const time = reftime.current.value;
+        const datenTime = refdatenTime.current.value;
 
-        if ((!title || !desc || !date || !time)) {
+        if ((!title || !desc || !datenTime )) {
             return Swal.fire({
                 icon: 'error',
                 title: 'Error!',
@@ -27,10 +25,10 @@ const TaskAdd = () => {
         const product = {
             title: title,
             desc: desc,
-            date: date,
-            time: time
+            datenTime: datenTime,
 
         }
+
         console.log(product);
         fetch('https://hexatech-server.herokuapp.com/newTask', {
             method: 'POST',
@@ -41,7 +39,15 @@ const TaskAdd = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (data.success) {
+                //console.log(data);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Added!',
+                    text: `${title} ${desc} ${datenTime}' has been Added.`,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                if (data.result) {
                     even.target.reset();
                     toast('task successfully added')
                 }
@@ -62,15 +68,14 @@ const TaskAdd = () => {
                             <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-5 mt-5'>
                                 <input ref={reftitle} type="text" className="input input-bordered w-full" placeholder='task-title' />
                                 <input ref={refdesc} type="text" className="input input-bordered w-full" placeholder='task-description' />
-                                <input ref={refdate} type="date" className="input input-bordered w-full" placeholder='Start-date(Day-M-Year)' />
-                                <input ref={reftime} type="time" className="input input-bordered w-full" placeholder='Due-date(Day-M-Year)' />
+                                <input ref={refdatenTime} type="datetime-local" className="input input-bordered w-full" />
                                 <input type="submit" value='Add Task' className="btn btn-secondary w-full" />
-
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

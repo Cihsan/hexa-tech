@@ -1,4 +1,4 @@
-import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
+import { HtmlEditor, Table,Count, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
 
 class TextEditor extends React.Component {
@@ -7,7 +7,7 @@ class TextEditor extends React.Component {
         this.toolbarSettings = {
             items: ['Bold', 'Italic', 'Underline', 'StrikeThrough',
                 'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
-                'LowerCase', 'UpperCase', '|',
+                'LowerCase', 'UpperCase', '|', 'CreateTable',
                 'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
                 'Outdent', 'Indent', '|',
                 'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
@@ -22,10 +22,9 @@ class TextEditor extends React.Component {
         return <div className='mr-4 ml-4'>
             <RichTextEditorComponent height={580} toolbarSettings={this.toolbarSettings} quickToolbarSettings={this.quickToolbarSettings}>
                 {/* if you want so you can write some text here */}
-                <Inject services={[Toolbar, Image, Link, HtmlEditor, QuickToolbar]} />
+                <Inject services={[Toolbar,  Image, Link, HtmlEditor, QuickToolbar, Table, Count]} />
             </RichTextEditorComponent>
         </div>;
     }
 }
 export default TextEditor;
-

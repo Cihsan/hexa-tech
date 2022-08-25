@@ -15,8 +15,8 @@ const Spreadsheets = () => {
                 allowSave={true}
                 saveUrl="https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save">
                 <SheetsDirective>
-                    <SheetDirective>
-                        <RangesDirective>
+                    <SheetDirective >
+                        <RangesDirective >
                             <RangeDirective dataSource={defaultData}></RangeDirective>
                         </RangesDirective>
                     </SheetDirective>

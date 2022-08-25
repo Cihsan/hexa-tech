@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="bg-sky-50 mt-24 footers">
             <div className="lg:flex flex-row justify-evenly items-center py-20">
-                <div className="p-0 mb-2 ml-3 lg:w-96 text-4xl text-blue-900 font-bold">
+                <div className=" mb-2 ml-3 text-4xl text-blue-900 font-bold">
                     <h1>Join Our <span className="text-purple-600 underline">Newsletter</span> & Get updated</h1>
                 </div>
                 <div >

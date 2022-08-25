@@ -3,22 +3,65 @@ import { Link, Outlet } from 'react-router-dom';
 
 const TaskBoard = () => {
     return (
-        <div class="drawer drawer-mobile bg-gray-100">
-            
-            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
+        <div className="drawer drawer-mobile bg-gray-100">
+
+            <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
                 {/* <!-- Page content here --> */}
                 <h1 className='text-2xl font-bold text-rose-500 text-center'>Welcome To Project Management</h1>
                 <Outlet></Outlet>
             </div>
-            <div class="drawer-side">
-                <label for="my-drawer-2" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-56 bg-slate-300 ">
-                    <Link to='/task/' className='font-bold mt-20 mb-2 link-hover hover:text-cyan-400'>Overview</Link>
-                    <Link to='/task/taskAdd' className='font-bold link-hover hover:text-cyan-400'>Add Task</Link>
-                    <Link to='/task/employee' className='font-bold link-hover mb-2 mt-2 hover:text-cyan-400'>Employee Overview</Link>
-                    <Link to='/task/addEmployee' className='font-bold link-hover hover:text-cyan-400'>Add Employee</Link>
+            <div className="drawer-side">
+                <label for="task" className="drawer-overlay"></label>
+                <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 border border-red-200 text-base-content">
+
+                    <div className="mt-2">
+                        <ul className="space-y-2">
+                            <li>
+                                <Link to="/task/" className="flex items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    OverView</Link>
+                            </li>
+                            <li>
+                                <Link to="/task/taskAdd" className="flex items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Task Add</Link>
+                            </li>
+                            <li>
+                                <Link to="/task/notes" className="flex items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Notes</Link>
+                            </li>
+                            <li>
+                                <a rel="noreferrer" href="https://incredible-zabaione-2ed5a1.netlify.app/" target="_blank" className="flex items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Note Manage</a>
+                            </li>
+
+                            <li>
+                                <Link to="/task/addEmployee" className=" items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Employee Manage</Link>
+
+                            </li>
+                            <li>
+                                <Link to="/task/finance" className=" items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Finance Manage</Link>
+
+                            </li>
+                            <li>
+                                <Link to="/task/time-line" className=" items-centerx text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+
+                                    Task Timeline</Link>
+
+                            </li>
+
+
+                        </ul>
+                    </div>
                 </ul>
+
             </div>
         </div>
     );

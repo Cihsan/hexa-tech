@@ -1,9 +1,9 @@
 import React from 'react';
-import EmployMToolDashboard from "../Projects/EmployeHome/EmployMToolDashboard"
+import EmployeHome from './EmployeHome/EmployeHome';
 const AddEmployee = () => {
     return (
         <div>
-           <EmployMToolDashboard></EmployMToolDashboard>
+            <EmployeHome></EmployeHome>
         </div>
     );
 };

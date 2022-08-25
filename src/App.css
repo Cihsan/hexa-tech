@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {}
+/* .App {} */
 
 /* .bg-text {
     color: #913bff;
     text-decoration: underline;
 } */
+
 /* spreadsheet style */
 @import url("https://cdn.syncfusion.com/ej2/bootstrap5.css");
-
 
 
 /* syncfusion schduler style*/
@@ -20,5 +20,3 @@
 @import "../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
 
 
-/* syncfusion docs style  */
-@import "../node_modules/@syncfusion/ej2-react-documenteditor/styles/material.css";
