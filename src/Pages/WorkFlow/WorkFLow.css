@@ -1,0 +1,30 @@
+.save__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+
+
+.workFlow-container {
+  border: 1px solid gray;
+  height: 600px;
+  margin: 20px;
+}
+
+/* Text Updater Node */
+.text-updater-node {
+  height: 50px;
+  border: 1px dashed #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+}
+
+.text-updater-node label {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}

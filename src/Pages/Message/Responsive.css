@@ -1,0 +1,9 @@
+@media (max-width: 640px) {
+    .icon, .chat, .profile{
+        display: none;
+        background-color: blanchedalmond;
+    }
+    .recentChat{
+        width: auto;
+    }
+}
