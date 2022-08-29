@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify';
+import NoteHome from '../Projects/Notes/NoteHome';
 
 const Contact = () => {
 
@@ -68,6 +69,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            {/* <NoteHome /> */}
         </div>
     );
 };
