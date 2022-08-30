@@ -53,6 +53,10 @@ import UpdateProfile from './Pages/UserBoard/UpdateProfile';
 import SurveyQuizLanding from './Pages/Survey/SurveyQuizLanding';
 import SurveyTypeOne from './Pages/Survey/SurveyTypes/SurveyTypeOne';
 import QuizTypesOne from './Pages/Survey/SurveyTypes/QuizTypesOne';
+import i18n from './i18n'
+import CurrencyChange from './Pages/CurrencyChange/CurrencyChange';
+import RealtimeMessage from './Pages/RealtimeMessage/RealtimeMessage';
+import Messenger from './Pages/Message/Messenger';
 
 // import Paint from './Pages/Paint/Paint';
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
@@ -65,11 +69,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<AllBlog />} />
+        <Route path="/currencyChange" element={<CurrencyChange />} />
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/RealtimeMessage" element={<RealtimeMessage />}></Route>
+        <Route path="/messenger" element={<Messenger />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/testing" element={<Testing />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
+        
 {/* surveyQuizLanding */}
 <Route path="/surveyQuizLanding" element={<SurveyQuizLanding />} />
         <Route path="/survey" element={<SurveyTypeOne />} />

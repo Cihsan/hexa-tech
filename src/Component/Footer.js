@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import './Footer.css'
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <div className="bg-sky-50 mt-24 footers">
             <div className="lg:flex flex-row justify-evenly items-center py-20">
-                <div className=" mb-2 ml-3 text-4xl text-blue-900 font-bold">
-                    <h1>Join Our <span className="text-purple-600 underline">Newsletter</span> & Get updated</h1>
+                <div className=" mb-2 ml-3 text-2xl text-blue-900 font-bold">
+                    <h4>{t("allFooter.footerHeader1")} <span className="text-purple-600 underline">{t("allFooter.footerHeader2")}</span> {t("allFooter.footerHeader3")}</h4>
                 </div>
                 <div >
                     <div className="flex flex-row flex-wrap justify-center">
@@ -17,13 +19,13 @@ const Footer = () => {
                             placeholder="Enter your email"
                         />
                         <button
-                            className="p-2 lg:w-28 h-16 bg-purple-600 font-bold rounded-r-lg  text-white hover: hover:bg-blue-900"
+                            className="p-2 lg:w-24 h-16 bg-purple-600 font-bold rounded-r-lg  text-white hover: hover:bg-blue-900"
                             type="button"
                         >
-                            Subscribe
+                            {t("allFooter.footerSubscribe")}
                         </button>
                     </div>
-                    <span className="text-stone-500 ml-2">We only send interesting and relevant emails.</span>
+                    <span className="text-stone-500 ml-2">{t("allFooter.footerSubscribeNote")}</span>
                 </div>
             </div>
             <footer className="footer px-10 mb-20 text-slate-700 text-lg">
@@ -33,9 +35,9 @@ const Footer = () => {
                         src={require("../../Assets/icon/logo_01.png")}
                         alt=""
                     /> */}
-                    <h1 className="font-bold text-3xl text-blue-900">☣ Hexatech</h1>
+                    <h1 className="font-bold text-3xl text-blue-900">{t("allFooter.footerTitle1")}</h1>
                     <div className="lg:w-72">
-                        <p>In this className, you will learn about the most effective machine learning techniques, and gain practice implementing them.</p>
+                        <p>{t("allFooter.footerSubTitle")}</p>
                     </div>
                     <div className="footerSocial mt-8">
                         <a href="/" target="blank"><i className="fa fa-github"></i></a>
@@ -45,37 +47,36 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-link">
-                    <span className="font-bold uppercase text-blue-900 text-2xl">Links</span>
-                    <Link to="">Home</Link>
-                    <Link to="">Pricing</Link>
-                    <Link to="">About us</Link>
-                    <Link to="">Service</Link>
-                    <Link to="">Blog</Link>
+                    <span className="font-bold uppercase text-blue-900 text-2xl">{t("allFooter.footerTitle2")}</span>
+                    <Link to="">{t("allFooter.footerLink1")}</Link>
+                    <Link to="">{t("allFooter.footerLink2")}</Link>
+                    <Link to="">{t("allFooter.footerLink3")}</Link>
+                    <Link to="">{t("allFooter.footerLink4")}</Link>
+                    <Link to="">{t("allFooter.footerLink5")}</Link>
                 </div>
                 <div className="footer-link">
-                    <span className="font-bold uppercase text-blue-900 text-2xl">Services</span>
-                    <Link to="">Artificial Intelligence</Link>
-                    <Link to="">Data Analytics</Link>
-                    <Link to="">Data Visualization</Link>
-                    <Link to="">Deep Learning</Link>
-                    <Link to="">Statistical Modeling</Link>
+                    <span className="font-bold uppercase text-blue-900 text-2xl">{t("allFooter.footerTitle3")}</span>
+                    <Link to="">{t("allFooter.footerLink6")}</Link>
+                    <Link to="">{t("allFooter.footerLink7")}</Link>
+                    <Link to="">{t("allFooter.footerLink8")}</Link>
+                    <Link to="">{t("allFooter.footerLink9")}</Link>
+                    <Link to="">{t("allFooter.footerLink10")}</Link>
                 </div>
                 <div className="footer-link">
-                    <span className="font-bold uppercase text-blue-900 text-2xl">Legal
+                    <span className="font-bold uppercase text-blue-900 text-2xl">{t("allFooter.footerTitle4")}
                     </span>
-                    <Link to="">Terms of use</Link>
-                    <Link to="">Terms & conditions</Link>
-                    <Link to="">Privacy Policy</Link>
-                    <Link to="">Cookie policy</Link>
-                    <Link to="">Shipping Details</Link>
+                    <Link to="">{t("allFooter.footerLink11")}</Link>
+                    <Link to="">{t("allFooter.footerLink12")}</Link>
+                    <Link to="">{t("allFooter.footerLink13")}</Link>
+                    <Link to="">{t("allFooter.footerLink14")}</Link>
+                    <Link to="">{t("allFooter.footerLink15")}</Link>
                 </div>
             </footer>
             <hr />
             <div className="lg:flex items-center justify-between lg:px-9 py-6 text-slate-700">
                 <div className="flex items-center justify-center">
                     <p>
-                        Developed By Tech Challengers <br /> © 2022 Hexa Tech | All
-                        rights reserved.
+                    {t("allFooter.footNote1")} <br /> {t("allFooter.footNote2")}
                     </p>
                 </div>
                 <div className="py-5 lg:py-0 lg:mr-8">

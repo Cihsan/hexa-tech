@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrencyChange from '../CurrencyChange/CurrencyChange';
 
 const Contact = () => {
     return (
@@ -51,6 +52,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            <CurrencyChange></CurrencyChange>
         </div>
     );
 };

@@ -3,8 +3,10 @@ import React from 'react';
 import "./Herobanner.css"
 //import banner from "../Assets/icon/banner.png"
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Herobanner = () => {
+    const { t} = useTranslation();
     return (
         <div className=''>
             <div className='banner'  >
@@ -21,10 +23,11 @@ const Herobanner = () => {
 
                         {/* <img src={banner} className="max-w-m  rounded-lg " alt='' /> */}
                         <div className='text-center'>
-                            <h1 className="text-5xl font-bold herotext1">We Make Some For You, you can get it </h1>
-                            <p className=" text-2xl py-6">Hexatech delivered blazing fast, Unique and powerful suite of software to run your entire business, brought to you by a company with the long term vision to transform the way you work.</p>
+                            <h4 className="text-4xl font-bold herotext1"> 
+                            {t("home.title")} </h4>
+                            <p className=" text-xl py-6">{t("home.subTitle")}</p>
                             <div className='flex-col lg:flex-row'>
-                                <Link to='/#our' className="btn btn-primary">Get Started </Link>
+                                <Link to='/#our' className="btn btn-primary">{t("button.startButton")}</Link>
 
                             </div>
                         </div>

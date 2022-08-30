@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const Service = () => {
+    const { t} = useTranslation()
     const navigate = useNavigate()
     const [services, setService] = useState([])
     console.log(services.f1)
@@ -13,7 +15,7 @@ const Service = () => {
     return (
         <div id='our' className=''>
             <div className='mb-20'>
-                <h1 className='text-4xl font-bold text-center mb-7'>Our Main Service Feature</h1>
+                <h1 className='text-3xl font-bold text-center mb-7'>{t("home.featureTitle")}</h1>
                 {/* <h2 className='text-xl text-[#737373] text-center'>Identify new opportunities, convert visitors, deliver customer happiness, and more!</h2> */}
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-7 mx-4 lg:mx-10'>
