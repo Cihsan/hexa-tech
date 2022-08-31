@@ -1,5 +1,6 @@
 import React from 'react';
 import CurrencyChange from '../CurrencyChange/CurrencyChange';
+import ContactMap from './ContactMap';
 
 const Contact = () => {
     return (
@@ -52,7 +53,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <CurrencyChange></CurrencyChange>
+            <ContactMap></ContactMap>
         </div>
     );
 };
