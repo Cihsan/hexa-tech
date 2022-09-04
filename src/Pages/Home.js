@@ -3,7 +3,6 @@ import Blog from '../Component/Blog';
 import Features from '../Component/Features';
 import Footer from '../Component/Footer';
 import Herobanner from '../Component/Herobanner';
-import Service from '../Component/Service';
 // import FAQ from '../Component/FAQ';
 //import Heroservice from '../Component/Heroservice';
 // import Info from '../Component/Info';
@@ -18,7 +17,6 @@ const Home = () => {
         <div>
             {/* <Nav/> */}
             <Herobanner />
-            <Service/>
             {/* <Heroservice /> */}
             {/* <Summary /> */}
             {/* <Testimonial /> */}

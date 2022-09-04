@@ -79,6 +79,7 @@ const Navbar = () => {
           <li><NavLink className={({ isActive }) => (isActive ? "active nav-link text-dark" : "link nav-link text-dark")} to='/about'>{t("home.navAbout")}</NavLink></li>
           <li><NavLink className={({ isActive }) => (isActive ? "active nav-link text-dark" : "link nav-link text-dark")} to='/contact'>{t("home.navContact")}</NavLink></li>
           <li><NavLink className={({ isActive }) => (isActive ? "active nav-link text-dark" : "link nav-link text-dark")} to='/messenger'>Messenger</NavLink></li>
+          <li><NavLink className={({ isActive }) => (isActive ? "active nav-link text-dark" : "link nav-link text-dark")} to='/try'>Try</NavLink></li>
 
           <div className="lg:mt-6 lg:mr-5">
               <button onClick={changeLang('bd')}>

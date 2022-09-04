@@ -37,6 +37,7 @@
     "read-more-react": "^1.0.10",
     "survey-react": "^1.9.45",
     "sweetalert2": "^11.4.29",
+    "swiper": "^8.3.2",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },

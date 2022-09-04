@@ -57,6 +57,7 @@ import i18n from './i18n'
 import CurrencyChange from './Pages/CurrencyChange/CurrencyChange';
 import RealtimeMessage from './Pages/RealtimeMessage/RealtimeMessage';
 import Messenger from './Pages/Message/Messenger';
+import Try from './Pages/Try/Try';
 
 // import Paint from './Pages/Paint/Paint';
 // import ProtectedPath from './Pages/UserAccess/ProtectedPath';
@@ -77,6 +78,7 @@ function App() {
         <Route path="/testing" element={<Testing />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/try" element={<Try />}></Route>
         
 {/* surveyQuizLanding */}
 <Route path="/surveyQuizLanding" element={<SurveyQuizLanding />} />

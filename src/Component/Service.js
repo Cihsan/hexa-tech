@@ -13,7 +13,7 @@ const Service = () => {
             .then(data => setService(data))
     }, [])
     return (
-        <div id='our' className=''>
+        <div id='feature'>
             <div className='mb-20'>
                 <h1 className='text-3xl font-bold text-center mb-7'>{t("home.featureTitle")}</h1>
                 {/* <h2 className='text-xl text-[#737373] text-center'>Identify new opportunities, convert visitors, deliver customer happiness, and more!</h2> */}
