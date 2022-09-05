@@ -15,8 +15,8 @@ const NoteHome = () => {
     return (
 
         <div>
-            <EditModal editId={editId} notes={notes} setNotes={setNotes} />
             <NoteHeader />
+            <EditModal editId={editId} notes={notes} setNotes={setNotes} />
             <Form title={title} settitle={settitle} desc={desc} setDesc={setDesc} notes={notes} setNotes={setNotes} />
             {
                 notes.length === 0 ? <div className="card w-96 bg-base-100 shadow-xl">
