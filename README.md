@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+Open [live-site](https://hexa-tech.web.app/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+Open [Github backEnd Server](https://github.com/rana135/hexatech-server) to view it in your browser.
 
 ### `npm start`
 
